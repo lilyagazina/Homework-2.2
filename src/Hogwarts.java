@@ -3,7 +3,7 @@ public class Hogwarts {
     private int transgressionDistance;//расстояние трансгрессии
     private String nameStudents;//Ученики
 
-    public Hogwarts(int powerOfMagic, int transgressionDistance, String nameStudents) {
+    public Hogwarts(String nameStudents,int powerOfMagic, int transgressionDistance) {
         this.powerOfMagic = powerOfMagic;
         this.transgressionDistance = transgressionDistance;
         this.nameStudents = nameStudents;

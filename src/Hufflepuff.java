@@ -1,9 +1,11 @@
-public class Hufflepuff {
+public class Hufflepuff extends Hogwarts {
     private int hardworking; //трудолюбивы
     private int loyal; // верны
     private int honest; //честны
 
-    public Hufflepuff(int hardworking, int loyal, int honest) {
+    public Hufflepuff(String nameStudents,int powerOfMagic, int transgressionDistance,
+                      int hardworking, int loyal, int honest) {
+        super(nameStudents, powerOfMagic, transgressionDistance);
         this.hardworking = hardworking;
         this.loyal = loyal;
         this.honest = honest;
