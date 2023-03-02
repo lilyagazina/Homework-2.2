@@ -34,4 +34,12 @@ public class Hufflepuff extends Hogwarts {
     public void setHonest(int honest) {
         this.honest = honest;
     }
+
+    @Override
+    public String toString() {
+        return "Пуффендуй " +
+                " верны " + loyal +
+                ", честны " + honest +
+                ", трудолюбивы " + hardworking;
+    }
 }

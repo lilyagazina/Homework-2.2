@@ -1,23 +1,67 @@
 public class СompareQualityStudents { //сравнивает качества студента по количеству баллов
-        public static void getBestStudentSlytherin(Slytherin[]slytherins){
-                int best = slytherins[0].getSumPoints();
-                for (int i = 0; i < slytherins.length; i++) {
-                        if (best< slytherins[i].getSumPoints())
-                                best = slytherins[i].getSumPoints();
-                        System.out.println(best);
-                        slytherins[i].getNameStudents();
-                        System.out.println( slytherins[i].getNameStudents());
-                }
+    public static void getBestStudent(Gryffindor student1, Gryffindor student2) {
+        if (student1.getNobility() + student1.getHonor() + student1.getCourage() +
+                student1.getPowerOfMagic() + student1.getTransgressionDistance() >
+                student2.getNobility() + student2.getHonor() + student2.getCourage() +
+                        student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Гермиона  Грейнджер лучший Гриффиндорец, чем Рон Уизли");
 
+        } else if (student1.getNobility() + student1.getHonor() + student1.getCourage() +
+                student1.getPowerOfMagic() + student1.getTransgressionDistance() <
+                student2.getNobility() + student2.getHonor() + student2.getCourage() +
+                        student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Рон Уизли лучший Гриффиндорец, чем Гермиона Грейнджер");
         }
+    }
 
+    public static void getBestStudent(Hufflepuff student1, Hufflepuff student2) {
+        if (student1.getHonest() + student1.getHardworking() + student1.getLoyal() +
+                student1.getPowerOfMagic() + student1.getTransgressionDistance() >
+                student2.getHonest() + student2.getHardworking() + student2.getLoyal() +
+                        student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Седрик Диггори лучший Слизеринец, чем Захария Смит");
 
-           /* System.out.println("Ученик " + gryffindor.getNameStudents() +
-                    ", сила магии  " + gryffindor.getPowerOfMagic() +
-                    ", растояние трансгрессии  " + gryffindor.getTransgressionDistance() +
-                    ", храбрость  " + gryffindor.getCourage() +
-                    ", честь  " + gryffindor.getHonor() +
-                    ", благородство  " + gryffindor.getNobility());*/
+        } else if (student1.getHonest() + student1.getHardworking() + student1.getLoyal() +
+                student1.getPowerOfMagic() + student1.getTransgressionDistance() <
+                student2.getHonest() + student2.getHardworking() + student2.getLoyal() +
+                        student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Захария Смит лучший Пуффендуец, чем Седрик Диггори");
         }
+    }
+
+    public static void getBestStudent(Ravenclaw student1, Ravenclaw student2) {
+        if (student1.getCreativity() + student1.getSmart() + student1.getWise() +
+                student1.getWitty() + student1.getPowerOfMagic() + student1.getTransgressionDistance() >
+                student2.getCreativity() + student2.getSmart() + student2.getWise() +
+                        student2.getWitty() + student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Чжоу Чанг лучший Когтевранец, чем Падма Патил");
+
+        } else if (student1.getCreativity() + student1.getSmart() + student1.getWise() +
+                student1.getWitty() + student1.getPowerOfMagic() + student1.getTransgressionDistance() <
+                student2.getCreativity() + student2.getSmart() + student2.getWise() +
+                        student2.getWitty() + student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println("Падма Патил лучший Когтевранец, чем Чжоу Чанг");
+        }
+    }
+
+    public static void getBestStudent(Slytherin student1, Slytherin student2) {
+        if (student1.getDetermination() + student1.getAmbition() + student1.getCunning() +
+                student1.getLustForPower() + student1.getResourcefulness() + student1.getPowerOfMagic()
+                + student1.getTransgressionDistance() >
+                student2.getDetermination() + student2.getAmbition() + student2.getCunning() +
+                        student2.getLustForPower() + student2.getResourcefulness() + student2.getPowerOfMagic()
+                        + student2.getTransgressionDistance()) {
+            System.out.println("Драко Малфой лучший Слизеринец, чем Грэхэм Монтегю");
+
+        } else if (student1.getDetermination() + student1.getAmbition() + student1.getCunning() +
+                student1.getLustForPower() + student1.getResourcefulness() + student1.getPowerOfMagic()
+                + student1.getTransgressionDistance() <
+                student2.getDetermination() + student2.getAmbition() + student2.getCunning() +
+                        student2.getLustForPower() + student2.getResourcefulness() + student2.getPowerOfMagic()
+                        + student2.getTransgressionDistance()) {
+            System.out.println("Грэхэм Монтегю лучший Слизеринец, чем Драко Малфой");
+        }
+    }
+}
 
 

@@ -1,12 +1,12 @@
 public class PrintQualityOfStudents { //выводит качества студента
+    public void printInfo(){
+
+    }
     //2 вариант
-    public void printQualityGryffindor(Gryffindor gryffindor) {
-        System.out.println("Ученик " + gryffindor.getNameStudents() +
-                    ", сила магии " + gryffindor.getPowerOfMagic() +
-                    ", растояние трансгрессии " + gryffindor.getTransgressionDistance() +
-                    ", храбрость " + gryffindor.getCourage() +
-                    ", честь " + gryffindor.getHonor() +
-                    ", благородство " + gryffindor.getNobility());
+    public void printQualityStudents(Hogwarts students){
+        System.out.println("Ученик " + students.getNameStudents() +
+                    ", сила магии " + students.getPowerOfMagic() +
+                    ", растояние трансгрессии " + students.getTransgressionDistance());
         }
     public void printQualitySlytherin(Slytherin slytherins) {
             System.out.println("Ученик " + slytherins.getNameStudents() +
@@ -28,7 +28,8 @@ public class PrintQualityOfStudents { //выводит качества студ
                     ", растояние трансгрессии " + gryffindor.getTransgressionDistance() +
                     ", храбрость " + gryffindor.getCourage() +
                     ", честь " + gryffindor.getHonor() +
-                    ", благородство " + gryffindor.getNobility());*/
+                    ", благородство " + gryffindor.getNobility());
+        }}
     public void printQualityHufflepuff(Hufflepuff[] hufflepuffs) {
         for (int i = 0; i < hufflepuffs.length; i++) {
             Hufflepuff hufflepuff = hufflepuffs[i];
@@ -54,7 +55,7 @@ public class PrintQualityOfStudents { //выводит качества студ
         }
     }
 
-   /* public void printQualitySlytherin(Slytherin[] slytherins) {
+    public void printQualitySlytherin(Slytherin[] slytherins) {
         for (int i = 0; i < slytherins.length; i++) {
             Slytherin slytherin = slytherins[i];
             System.out.println("Ученик " + slytherin.getNameStudents() +

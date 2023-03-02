@@ -32,5 +32,13 @@ public class Hogwarts {
     public void setNameStudents(String nameStudents) {
         this.nameStudents = nameStudents;
     }
+
+    @Override
+    public String toString() {
+        return "Хогвартс " +
+                "Ученик " + nameStudents +
+                ", сила магии " + powerOfMagic +
+                ", растояние трансгрессии " + transgressionDistance;
+    }
 }
 

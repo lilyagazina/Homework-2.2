@@ -54,34 +54,14 @@ public class Slytherin extends Hogwarts {
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
     }
-    public int getSumPoints(){
-        int sumPoints;
-            sumPoints = getPowerOfMagic() + getTransgressionDistance() +
-                   getCunning() + getAmbition() + getResourcefulness()+
-                    getDetermination() + getLustForPower();
-            return sumPoints;
 
-        }
-
-
-   /* public static void getBestStudentSlytherin(Slytherin slytherins){
-        int best = slytherins[0].getSumPoints();
-        for (int i = 0; i < slytherins.length; i++) {
-            if (best< slytherins[i].getSumPoints()) {
-                best = slytherins[i].getSumPoints();
-            }
-            System.out.println(best);
-        }
-
-    }*/
-    /*public static void getBestStudentSlytherin(Slytherin[] slytherins){
-        int best = slytherins[0].getSumPoints();
-        for (int i = 0; i < slytherins.length; i++) {
-            if (best< slytherins[i].getSumPoints()) {
-                best = slytherins[i].getSumPoints();
-            }
-            System.out.println(best);
-        }
-
-    }*/
+    @Override
+    public String toString() {
+        return "Слизерин " +
+                " амбициозность " + ambition +
+                ", хитрость " + cunning +
+                ", жажда власти " + lustForPower +
+                ", решительность " + determination +
+                ", находчивость " + resourcefulness;
+    }
 }
