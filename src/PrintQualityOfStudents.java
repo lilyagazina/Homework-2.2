@@ -1,5 +1,26 @@
-public class PrintQualityOfStudents {
-    public void printQualityGryffindor(Gryffindor[] gryffindors) {
+public class PrintQualityOfStudents { //выводит качества студента
+    //2 вариант
+    public void printQualityGryffindor(Gryffindor gryffindor) {
+        System.out.println("Ученик " + gryffindor.getNameStudents() +
+                    ", сила магии " + gryffindor.getPowerOfMagic() +
+                    ", растояние трансгрессии " + gryffindor.getTransgressionDistance() +
+                    ", храбрость " + gryffindor.getCourage() +
+                    ", честь " + gryffindor.getHonor() +
+                    ", благородство " + gryffindor.getNobility());
+        }
+    public void printQualitySlytherin(Slytherin slytherins) {
+            System.out.println("Ученик " + slytherins.getNameStudents() +
+                    ", сила магии " +slytherins.getPowerOfMagic() +
+                    ", растояние трансгрессии " + slytherins.getTransgressionDistance() +
+                    ", амбициозность " + slytherins.getAmbition() +
+                    ", хитрость " + slytherins.getCunning() +
+                    ", жажда власти " + slytherins.getLustForPower() +
+                    ", решительность " + slytherins.getDetermination() +
+                    ", находчивость " + slytherins.getResourcefulness());
+        }
+
+// 1 вариант
+   /* public void printQualityGryffindor(Gryffindor[] gryffindors) {
         for (int i = 0; i < gryffindors.length; i++) {
             Gryffindor gryffindor = gryffindors[i];
             System.out.println("Ученик " + gryffindor.getNameStudents() +
@@ -7,10 +28,7 @@ public class PrintQualityOfStudents {
                     ", растояние трансгрессии " + gryffindor.getTransgressionDistance() +
                     ", храбрость " + gryffindor.getCourage() +
                     ", честь " + gryffindor.getHonor() +
-                    ", благородство " + gryffindor.getNobility());
-        }
-    }
-
+                    ", благородство " + gryffindor.getNobility());*/
     public void printQualityHufflepuff(Hufflepuff[] hufflepuffs) {
         for (int i = 0; i < hufflepuffs.length; i++) {
             Hufflepuff hufflepuff = hufflepuffs[i];
@@ -36,7 +54,7 @@ public class PrintQualityOfStudents {
         }
     }
 
-    public void printQualitySlytherin(Slytherin[] slytherins) {
+   /* public void printQualitySlytherin(Slytherin[] slytherins) {
         for (int i = 0; i < slytherins.length; i++) {
             Slytherin slytherin = slytherins[i];
             System.out.println("Ученик " + slytherin.getNameStudents() +
@@ -48,5 +66,5 @@ public class PrintQualityOfStudents {
                     ", решительность " + slytherin.getDetermination() +
                     ", находчивость " + slytherin.getResourcefulness());
         }
-    }
+    }*/
 }
