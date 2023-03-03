@@ -1,4 +1,5 @@
-public class СompareQualityStudents { //сравнивает качества студента по количеству баллов
+public class СompareQualityStudents {
+    //сравнивает качества студента по количеству баллов с одного факультета
     public static void getBestStudent(Gryffindor student1, Gryffindor student2) {
         if (student1.getNobility() + student1.getHonor() + student1.getCourage() +
                 student1.getPowerOfMagic() + student1.getTransgressionDistance() >
@@ -60,6 +61,20 @@ public class СompareQualityStudents { //сравнивает качества �
                         student2.getLustForPower() + student2.getResourcefulness() + student2.getPowerOfMagic()
                         + student2.getTransgressionDistance()) {
             System.out.println("Грэхэм Монтегю лучший Слизеринец, чем Драко Малфой");
+        }
+    }
+    //сравнивает двух любых учеников Хогвартса по силе магии и расстоянию трансгрессии,
+    // и выводит в консоль сравнительную оценку между двумя учениками.
+    public static void getBestStudent(Hogwarts student1, Hogwarts student2) {
+        if (student1.getPowerOfMagic() + student1.getTransgressionDistance() >
+                student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println(student1.getNameStudents()+" обладает большей силой магии и растоянием трансгрессии, чем "
+                    + student2.getNameStudents());
+
+        } else if (student1.getPowerOfMagic() + student1.getTransgressionDistance() <
+                student2.getPowerOfMagic() + student2.getTransgressionDistance()) {
+            System.out.println(student1.getNameStudents()+" обладает большей силой магии и растоянием трансгрессии, чем "
+                    + student2.getNameStudents());
         }
     }
 }

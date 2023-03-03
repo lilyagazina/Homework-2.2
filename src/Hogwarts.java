@@ -7,7 +7,18 @@ public class Hogwarts {
         this.powerOfMagic = powerOfMagic;
         this.transgressionDistance = transgressionDistance;
         this.nameStudents = nameStudents;
+        System.out.println("Хогвартс: " +
+                "Ученик " + this.nameStudents +
+                            ", сила магии " + this.powerOfMagic +
+                            ", растояние трансгрессии " +
+                    + this.transgressionDistance);
     }
+    /*public static void printInfo(Hogwarts nameStudents){
+        System.out.println("Хогвартс: " +
+                "Ученик " + nameStudents.getNameStudents() +
+                ", сила магии " + nameStudents.getPowerOfMagic() +
+                ", растояние трансгрессии " +
+                + nameStudents.getTransgressionDistance());}*/
 
     public int getTransgressionDistance() {
         return transgressionDistance;
@@ -40,5 +51,6 @@ public class Hogwarts {
                 ", сила магии " + powerOfMagic +
                 ", растояние трансгрессии " + transgressionDistance;
     }
+
 }
 
