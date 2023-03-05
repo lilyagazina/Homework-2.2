@@ -26,15 +26,15 @@ public class Main {
                 13, 14, 16, 15, 16);
         System.out.println("-----------------------------------------------");
         System.out.println(gregory);
+        harry.print();
         System.out.println("------------------------------------------------");
         СompareQualityStudents compareQualityStudents = new СompareQualityStudents();
-        compareQualityStudents.getBestStudent(hermione, ron);
-        compareQualityStudents.getBestStudent(zechariah, cedric);
-        compareQualityStudents.getBestStudent(zhou, padma);
-        compareQualityStudents.getBestStudent(draco, graham);
+        compareQualityStudents.getBestStudentGryffindor(hermione, ron);
+        compareQualityStudents.getBestStudentHufflepuff(zechariah, cedric);
+        compareQualityStudents.getBestStudentRavenclaw(zhou, padma);
+        compareQualityStudents.getBestStudentSlytherin(draco, graham);
         System.out.println("-----------------------------------------------");
-        compareQualityStudents.getBestStudent(draco, harry);
+        compareQualityStudents.getBestStudentHogwarts(draco, harry);
 
     }
-
-     }
+}

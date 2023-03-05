@@ -3,22 +3,11 @@ public class Hogwarts {
     private int transgressionDistance;//расстояние трансгрессии
     private String nameStudents;//Ученики
 
-    public Hogwarts(String nameStudents,int powerOfMagic, int transgressionDistance) {
+    public Hogwarts(String nameStudents, int powerOfMagic, int transgressionDistance) {
         this.powerOfMagic = powerOfMagic;
         this.transgressionDistance = transgressionDistance;
         this.nameStudents = nameStudents;
-        System.out.println("Хогвартс: " +
-                "Ученик " + this.nameStudents +
-                            ", сила магии " + this.powerOfMagic +
-                            ", растояние трансгрессии " +
-                    + this.transgressionDistance);
     }
-    /*public static void printInfo(Hogwarts nameStudents){
-        System.out.println("Хогвартс: " +
-                "Ученик " + nameStudents.getNameStudents() +
-                ", сила магии " + nameStudents.getPowerOfMagic() +
-                ", растояние трансгрессии " +
-                + nameStudents.getTransgressionDistance());}*/
 
     public int getTransgressionDistance() {
         return transgressionDistance;
@@ -51,6 +40,8 @@ public class Hogwarts {
                 ", сила магии " + powerOfMagic +
                 ", растояние трансгрессии " + transgressionDistance;
     }
-
+    public void print() {
+        System.out.println(this);
+    }
 }
 

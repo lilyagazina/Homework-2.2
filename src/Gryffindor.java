@@ -1,4 +1,4 @@
-public class Gryffindor extends Hogwarts{
+public class Gryffindor extends Hogwarts {
     private int nobility; //благородство
     private int honor;// честь
     private int courage;//храбрость
@@ -37,8 +37,9 @@ public class Gryffindor extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Гриффиндор"+" храбрость " + courage +
-                    ", честь " + honor +
-                    ", благородство " + nobility;
+        return super.toString() + " " + "Гриффиндор" + " храбрость " + courage +
+                ", честь " + honor +
+                ", благородство " + nobility;
     }
+
 }

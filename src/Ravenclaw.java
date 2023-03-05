@@ -1,4 +1,4 @@
-public class Ravenclaw extends Hogwarts{
+public class Ravenclaw extends Hogwarts {
     private int smart; //умны
     private int wise;// мудры
     private int witty;// остроумны
@@ -47,10 +47,11 @@ public class Ravenclaw extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Когтевран " +
+        return super.toString() + " " + "Когтевран " +
                 " умны " + smart +
                 ", мудры " + wise +
                 ", остроумны " + witty +
                 ", полны творчества " + creativity;
     }
+
 }
